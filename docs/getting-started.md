@@ -2,16 +2,21 @@
 outline: deep
 ---
 
-# Getting Started
+# Démarrage
 
-Welcome to this workshop! In this session we will go through various aspects of GeoNetwork:
+## Pré-requis
+Avant de commencer, assurez-vous d'avoir installé les outils suivants :
+- [QGIS Desktop](https://qgis.org/download/)
+- [VSCode](https://code.visualstudio.com/download)
 
-* Deploy an instance of GeoNetwork
-* Explore the various administration tools
-* Set up various parameters on the deployed instance
-* Import some record samples and see how they can be manipulated
-* Harvest records from a third-party instance
-* Explore the various records management tools
-* Deploy two GeoNetwork-UI apps: the Datahub and the Metadata Editor
+## Exemples de use cases
+Tout au long de ce workshop, nous allons explorer plusieurs cas d'utilisation concrets pour illustrer comment les LLM peuvent être utilisés avec QGIS. Voici quelques exemples de use cases que nous allons aborder (si vous n'avez pas les votres):
+1. **Afficher les bureaux de Camptocamp sur une carte**
+2. **Afficher la localisation des voitures en autopartage à Avignon**
+3. 
 
-But first, we will start with a **general overview of what GeoNetwork is**. Press "Next" to continue.
+## Déroulé
+Ce wroskhop se déroule en trois étapes, d'environ 1h chacune :
+1. Utiliser un chatbot pour créer une plugin qui ajoute les données à une carte selon le use case choisi.
+2. Choisir un plugin de chatbot pour QGIS, et reproduire le même use case.
+3. Connecter un serveur MCP à QGIS pour des use case plus avancés.

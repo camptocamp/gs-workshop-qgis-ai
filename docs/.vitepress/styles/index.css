@@ -1,0 +1,5 @@
+@import 'vitepress/dist/client/theme-default/styles/fonts.css';
+
+.VPImage.image-src {
+    clip-path: circle();
+}

@@ -3,11 +3,11 @@
 layout: home
 
 hero:
-  name: "GeoNetwork Workshop"
-  tagline: "Dive in to discover the best geodata management catalog."
+  name: "QGIS AI Assistant Workshop"
+  tagline: "Leverage LLMs as your QGIS assistants."
   image:
-    src: ./slider_tentes-650-ombre-1.jpg
-    alt: "GeoNetwork Workshop"
+    src: ./c2c-mountains.png
+    alt: "QGIS Workshop"
   actions:
     - theme: brand
       text: Get Started!
@@ -15,6 +15,5 @@ hero:
     - theme: alt
       text: Common issues
       link: /common-issues
-
 ---
 
