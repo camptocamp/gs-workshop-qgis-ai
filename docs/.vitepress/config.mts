@@ -34,6 +34,8 @@ export default defineConfig({
         text: "MCP servers",
         items: [
           { text: "Setup", link: "/mcp_setup" },
+          { text: "Use cases", link: "/mcp_usecases" },
+          { text: "Conclusion / Echange", link: "/mcp_conclusion" },
         ],
       },
       {
