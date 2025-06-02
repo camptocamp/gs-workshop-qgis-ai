@@ -4,28 +4,13 @@ outline: deep
 
 # Liste des plugins QGIS de Chatbot intégrés 
 
+Dans cette seconde section, nous allons explorer les plugins QGIS qui intègrent directement des chatbots ou des LLMs pour faciliter l'interaction avec QGIS. 
 
-https://plugins.qgis.org/plugins/aino-qgis-plugin-main/
+## Plugins QGIS de Chatbot
+Voici une liste de plugins intéressants à considérer.
 
-- Téléchargement de données OSM
-- L'agent est payant
-
-
-https://plugins.qgis.org/plugins/kue-ai
-
-- Assistant
-- L'agent est payant (19€ par mois / 1 mois gratuit)
-
-
-https://plugins.qgis.org/plugins/qgpt_agent_release
-
-- Assistant
-- Uniquement compatible OpenAI
-- Fait une erreur avec ma clé OpenAPI
-- L'interface semble un peu brouillon pour l'instant
-
-
-https://plugins.qgis.org/plugins/intelli_geo/
+### IntelliGeo
+https://www.intelligeo.org/
 
 ```bash
 pip3 install --user /home/amorvan/.local/share/QGIS/QGIS3/profiles/default/python/plugins/intelli_geo/ -r requirements.txt
@@ -37,7 +22,7 @@ pip3 install --user /home/amorvan/.local/share/QGIS/QGIS3/profiles/default/pytho
 + Intéressant d'avoir une case à cocher toolbox / algorithme
 + Un bouton permet d'ouvrir le code directement dans l'éditeur python (liste déroulante à gauche)
 
-
+### Promptly
 https://plugins.qgis.org/plugins/promptly/
 
 + Interface chatbot avec onglets code.
@@ -45,7 +30,15 @@ https://plugins.qgis.org/plugins/promptly/
 - pas de coloration syntaxique
 - pas d'historique de conversation
 
+### QGPT Agent
+https://plugins.qgis.org/plugins/qgpt_agent_release
 
+- Assistant
+- Uniquement compatible OpenAI
+- Fait une erreur avec ma clé OpenAPI
+- L'interface semble un peu brouillon pour l'instant
+
+### QGIS MCP
 https://github.com/jjsantos01/qgis_mcp
 
 +++ Utilisable depuis tous les agent qui supportent MCP
@@ -56,3 +49,16 @@ https://github.com/jjsantos01/qgis_mcp
 Idées d'améliorations :
 - Ouvrir le code dans l'éditeur Python de QGIS plutôt que de le lancer avec la méthode execute_code.
 - Pouvoir récupérer l'image du canvas pour ajuster les styles.
+
+### Kue (payant)
+
+https://plugins.qgis.org/plugins/kue-ai
+
+- Assistant
+- L'agent est payant (19€ par mois / 1 mois gratuit)
+
+### Aino QGIS Plugin (payant)
+https://plugins.qgis.org/plugins/aino-qgis-plugin-main/
+
+- Téléchargement de données OSM
+- L'agent est payant

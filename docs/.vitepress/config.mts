@@ -12,26 +12,30 @@ export default defineConfig({
     },
     sidebar: [
       {
-        text: "Introduction", link: "/introduction"
+        text: "Introduction", link: "/00_introduction"
       },
       {
-        text: "Démarrage", link: "/getting-started"
+        text: "Get started", link: "/01_getting-started"
       },
       {
         text: "1. Chatbots web",
         items: [
-          { text: "Contexte", link: "/chat_intro" },
-          { text: "Use case", link: "/chat_usecase1" },
+          { text: "Présentation Chatbots", link: "/10_chat_intro" },
+          { text: "Créer un script", link: "/11_chat_create" },
+          { text: "Modifier votre script", link: "/12_chat_modify" },
+          { text: "Déployer un plugin", link: "/13_chat_plugin" },
         ],
       },
       {
-        text: "QGIS plugins",
+        text: "2. QGIS plugins",
         items: [
-          { text: "Plugins", link: "/plugins_list" },
+          { text: "Liste de plugins", link: "/20_plugins_list" },
+          { text: "Intelligeo", link: "/21_plugins_intelligeo" },
+          { text: "Promptly", link: "/22_plugins_promptly" },
         ],
       },
       {
-        text: "MCP servers",
+        text: "3. MCP servers",
         items: [
           { text: "Setup", link: "/mcp_setup" },
           { text: "Use cases", link: "/mcp_usecases" },
@@ -71,7 +75,7 @@ export default defineConfig({
       "link",
       {
         rel: "icon",
-        href: "/gs-workshop-geonetwork/geonetwork-logo.svg",
+        href: "./favicon.png",
       },
     ],
   ], // this will work when deployed on GH Pages

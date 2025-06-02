@@ -10,8 +10,8 @@ hero:
     alt: "QGIS Workshop"
   actions:
     - theme: brand
-      text: Get Started!
-      link: /getting-started
+      text: Dive in !
+      link: /00_introduction
     - theme: alt
       text: Common issues
       link: /common-issues
