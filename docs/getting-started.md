@@ -16,7 +16,7 @@ Tout au long de ce workshop, nous allons explorer plusieurs cas d'utilisation co
 3. 
 
 ## Déroulé
-Ce wroskhop se déroule en trois étapes, d'environ 1h chacune :
+Ce workshop se déroule en trois étapes, d'environ 1h chacune :
 1. Utiliser un chatbot pour créer une plugin qui ajoute les données à une carte selon le use case choisi.
 2. Choisir un plugin de chatbot pour QGIS, et reproduire le même use case.
-3. Connecter un serveur MCP à QGIS pour des use case plus avancés.
+3. Connecter un serveur MCP à QGIS pour des use cases plus avancés.

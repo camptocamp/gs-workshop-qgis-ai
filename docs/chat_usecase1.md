@@ -7,7 +7,7 @@ outline: deep
 L'objectif ici est de créer un plugin QGIS qui affiche les bureaux de Camptocamp sur une carte. Nous allons utiliser un chatbot pour générer le code nécessaire à la création de ce plugin.
 
 :::info
-Nous pardons du postulat que vous avez déjà installé QGIS et que vous êtes familier avec son interface. Cependant, l'assistant doit vous guider à travers les étapes de création du plugin, même si vous n'avez pas d'expérience préalable en développement de plugins QGIS.
+Nous partons du postulat que vous avez déjà installé QGIS et que vous êtes familier avec son interface. Cependant, l'assistant doit vous guider à travers les étapes de création du plugin, même si vous n'avez pas d'expérience préalable en développement de plugins QGIS.
 :::
 
 :::info
