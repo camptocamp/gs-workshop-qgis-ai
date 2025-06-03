@@ -22,15 +22,7 @@ Lors de la réponse du LLM, l'agent se charge d'éxécuter les actions choisies 
 
 ## Installation du plugin et du serveur MCP
 
-### Installer le plugin QGIS
-
-- Installer le plugin MCP depuis le gestionnaire de plugins de QGIS.
-
-- Cliquer sur le bouton QGIS MCP dans la barre d'outil des plugins puis démarrer le serveur.
-
-A noter vous pouvez également utiliser la variable `QGIS_PLUGINPATH` pour utiliser le code source du plugin de l'étape suivante.
-
-### Installer le serveur MCP
+### Cloner le dépôt git
 
 Installer git : https://git-scm.com/downloads/win
 
@@ -39,6 +31,40 @@ git clone https://github.com/jjsantos01/qgis_mcp.git
 ```
 
 Ou télécharger les sources : https://github.com/jjsantos01/qgis_mcp/archive/refs/heads/main.zip
+
+### Installer le plugin
+
+Par copie du plugin :
+
+- Copier le dossier `qgis_mcp/qgis_mcp_plugin`.
+
+- Ouvrez le menu `Préférences > Profils utilisateurs > Ouvrir le dossier du profil actif`.
+
+- Allez dans le dossier `python/plugins`
+
+- Collez le plugin.
+
+Par variable d'environnement :
+
+- Dans le menu `Préferences > Options > Système`, ajoutez une variable `QGIS_PLUGINPATH` avec le chemin du dépôt git (dossier `qgis_mcp`).
+
+Par lien symbolique :
+
+```bash
+ln -s ~/dev/qgis_mcp/qgis_mcp_plugin ~/.local/share/QGIS/QGIS3/profiles/default/python/plugins/qgis_mcp_plugin
+```
+
+Dans tous les cas :
+
+- Redémarrer QGIS
+
+- Dans `Extensions > Installer/Gérer les extensions` puis dans l'onglet `Installés` cochez la case du plugin QGIS MCP pour activer le plugin.
+
+- Cliquez sur le bouton QGIS MCP dans la barre d'outil des plugins puis démarrer le serveur.
+
+Lien : https://github.com/jjsantos01/qgis_mcp/tree/main?tab=readme-ov-file#qgis-plugin
+
+### Installer le serveur MCP
 
 Pour faire fonctionner le serveur MCP nous aurons besoin d'installer `uv`.
 
