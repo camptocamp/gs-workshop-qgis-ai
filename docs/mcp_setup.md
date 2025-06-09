@@ -136,7 +136,7 @@ Dans le menu `View > Open View` ouvrez la side bar de Cline.
 
 Choisissez un fournisseur de modèles de langage et entrez une clé d'API.
 
-Ajoutez un serveur MCP, icône en forme de rack de serveurs, puis onglet Installed
+Ajoutez un serveur MCP, icône en forme de rack de serveurs, puis onglet `Installed`
 
 Ajouter dans le fichier `cline_mcp_settings.json` :
 

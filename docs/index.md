@@ -12,8 +12,5 @@ hero:
     - theme: brand
       text: Dive in !
       link: /00_introduction
-    - theme: alt
-      text: Common issues
-      link: /common-issues
 ---
 

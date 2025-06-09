@@ -29,6 +29,7 @@ export default defineConfig({
       {
         text: "2. QGIS plugins",
         items: [
+          { text: "RAG", link: "/20_plugins_rag" },
           { text: "Liste de plugins", link: "/20_plugins_list" },
           { text: "Intelligeo", link: "/21_plugins_intelligeo" },
           { text: "Promptly", link: "/22_plugins_promptly" },
@@ -53,7 +54,7 @@ export default defineConfig({
     nav: [
       {
         text: "Workshop",
-        link: "./introduction",
+        link: "./00_introduction",
       },
       {
         text: "QGIS Website",
