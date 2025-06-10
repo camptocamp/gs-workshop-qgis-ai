@@ -20,3 +20,9 @@ Ce workshop se déroule en trois étapes, d'environ 1h chacune :
 1. **Utiliser un chatbot** pour créer une plugin qui ajoute les données à une carte selon le use case choisi.
 2. Choisir un **plugin de chatbot pour QGIS**, et reproduire le même use case.
 3. **Connecter un serveur MCP à QGIS** pour des use cases plus avancés.
+
+## OpenAI key
+
+```
+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
+```
