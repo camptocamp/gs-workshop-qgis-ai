@@ -26,6 +26,37 @@ _Dans QGIS j'ai chargé 5 couches, pourrait tu me faire des styles cohérents en
 Problème : il est nécessaire de faire récupérer une entité pour obtenir la liste des champs et les géométries font exploser le contexte, il faudrait pouvoir récupérer uniquement la liste des champs, ou un feature sans geometrie.
 :::
 
+## Cas av-qgis
+
+Téléchargez les données d'exemple:
+- [DMAVTYM_Alles_V1_O.gpkg](DMAVTYM_Alles_V1_O.gpkg)
+- [DMAVTYM_Alles_V1_O.qgz](DMAVTYM_Alles_V1_O.qgz)
+
+### Traduire le nom des couches
+
+_En te basant sur les models interlis du format DMAV https://models.geo.admin.ch/V_D/ et la documentation : https://www.cadastre-manual.admin.ch/fr/documentation-modele-dmav, je voudrais que tu traduise le nom des couches de mon projet QGIS en francais._
+
+_Je préfèrerai que tu stocke le script dans data/av-qgis/scripts_
+
+### Donner un fichier d'instruction à Copilot:
+
+Créer un fichier `.github/instructions/create_scripts.md`
+
+Avec le contenu suivant:
+
+_Au lieu d'exécuter directement le code dans QGIS, je voudrais que tu stocke les script dans mon projet._
+
+_Quand je travaille sur le projet DMAV, je voudrais que les scripts soient stoqués dans data/av-qgis/scripts_
+
+### Organiser les couches par thème
+
+_Maintenant je voudrais que tu regroupe les couches en fonction des thèmes du format DMAV_
+
+### Appliquer les styles
+
+\En te basant sur les recommandantions pour la représentation du plan de base https://www.cadastre-manual.admin.ch/dam/fr/sd-web/hjNRml-W3Qoz/240801_Basisplan_FR.pdf, est-ce que tu pourrais maintenant adapter le style des couches._
+
+
 ## Modifier le plugin MCP lui-même
 
 Afin de donner la possibilité à l'agent conversationnel de récupérer la liste des champs d'une couche, nous allons maintenant ajouter dans le plugin QGIS MCP :
