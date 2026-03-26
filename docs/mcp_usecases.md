@@ -28,9 +28,11 @@ Problème : il est nécessaire de faire récupérer une entité pour obtenir la 
 
 ## Cas av-qgis
 
+<!--
 Téléchargez les données d'exemple:
 - [DMAVTYM_Alles_V1_O.gpkg](/data/av-qgis/DMAVTYM_Alles_V1_0.gpkg)
 - [DMAVTYM_Alles_V1_O.qgz](/data/av-qgis/DMAVTYM_Alles_V1_0.qgz)
+-->
 
 ### Traduire le nom des couches
 
