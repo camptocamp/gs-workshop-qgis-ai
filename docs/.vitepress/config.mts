@@ -5,6 +5,7 @@ export default defineConfig({
   title: "AI Workshop",
   description:
     "This website will take you through various steps to help you use LLM assistant for QGIS.",
+  cleanUrls: true,
   themeConfig: {
     logo: {
       src: "./qgis.png",
