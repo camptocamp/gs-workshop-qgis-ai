@@ -80,6 +80,10 @@ uv --directory "/ABSOLUTE/PATH/TO/PARENT/REPO/FOLDER/qgis_mcp/src/qgis_mcp" run 
 
 <!--
 uv --directory "qgis_mcp/src/qgis_mcp" run qgis_mcp_server.py
+
+uv --directory "/home/amorvan/dev/qgis-ai-workshop/qgis_mcp/src/qgis_mcp" run qgis_mcp_server.py
+
+uv --directory "C:\\Users\\Arnaud\Desktop\\qgis_mcp-main\\qgis_mcp-main\\src\\qgis_mcp" run qgis_mcp_server.py
 -->
 
 ### Configurer Claude Desktop (Windows et MacOS only)
@@ -126,6 +130,77 @@ Quelles sont les couches chargées dans QGIS ?
 ```
 
 Liens : https://github.com/jjsantos01/qgis_mcp?tab=readme-ov-file#claude-for-desktop-integration
+
+
+### Configurer Copilot
+
+Dans VS Code installez les extension **Github Copilot** et **Github Copilot Chat**.
+
+#### Sous Linux
+
+Dans le panel du chatbot, sous la saisie du prompt, cliquez sur le bouton **Configure tools** situé à droite de la sélection du modèle LLM.
+
+Puis cliquez sur le premier bouton en haut à droite du bandeau **Add MCP Server...***.
+
+Sélectionnez la première option **Command (stdio)**.
+
+La commande sera **uv**, et donnez lui le nom **QGIS**.
+
+Chemin du fichier : `~/.config/Code/User/mcp.json`
+
+Le fichier final doit ressembler à :
+
+```json
+{
+	"servers": {
+		"QGIS MCP": {
+			"type": "stdio",
+			"command": "uv",
+			"args": [
+				"--directory",
+				"/home/amorvan/dev/qgis-ai-workshop/qgis_mcp/src/qgis_mcp",
+				"run",
+				"qgis_mcp_server.py"
+			]
+		}
+	},
+```
+
+Vérifiez bien que le serveur est démarré et que les tools ont été détectés.
+
+### Sous Windows
+
+Dans le panel du chatbot, sous la saisie du prompt, cliquez sur le second bouton **Select tools**.
+
+Tout en bas de la fenêtre, cliquez sur **Add more tools**, **Add MCP Servers**, **Command (stdio)**
+
+La commande sera **uv**, et donnez lui le nom **QGIS**.
+
+Chemin du fichier : `C:\Users\Arnaud\AppData\Roaming\Code\User\settings.json`
+
+Le fichier final doit ressembler à :
+
+```json
+{
+    "python.defaultInterpreterPath": "c:\\Users\\Arnaud\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "mcp": {
+        "servers": {
+            "QGIS MCP": {
+                "type": "stdio",
+                "command": "uv",
+                "args": [
+                    "--directory",
+                    "C:\\Users\\Arnaud\\Desktop\\qgis_mcp-main\\qgis_mcp-main\\src\\qgis_mcp",
+                    "run",
+                    "qgis_mcp_server.py"
+                ]
+            },
+        }
+    }
+}
+```
+
+Vérifiez bien que le serveur est démarré et que les tools ont été détectés.
 
 
 ### Configurer Cline
@@ -179,7 +254,7 @@ Il pourrait être nécessaire de redémarrer le serveur dans QGIS.
 :::
 
 
-## Configure Continue
+### Configurer Continue
 
 Dans VS Code, installez l'extension Continue.dev.
 
