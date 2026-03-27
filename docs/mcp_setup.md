@@ -24,41 +24,15 @@ Lors de la réponse du LLM, l'agent se charge d'éxécuter les actions choisies 
 
 ### Cloner le dépôt git
 
-Installer git : https://git-scm.com/downloads/win
+Télécharger les sources : https://github.com/jjsantos01/qgis_mcp/archive/refs/heads/main.zip
 
-```bash
-git clone https://github.com/jjsantos01/qgis_mcp.git
-```
-
-Ou télécharger les sources : https://github.com/jjsantos01/qgis_mcp/archive/refs/heads/main.zip
+Et décompresser les fichiers.
 
 ### Installer le plugin
 
-Par copie du plugin :
+Faire un nouveau ZIP avec le dossier `qgis_mcp_plugin`.
 
-- Copier le dossier `qgis_mcp/qgis_mcp_plugin`.
-
-- Ouvrez le menu `Préférences > Profils utilisateurs > Ouvrir le dossier du profil actif`.
-
-- Allez dans le dossier `python/plugins`
-
-- Collez le plugin.
-
-Par variable d'environnement :
-
-- Dans le menu `Préferences > Options > Système`, ajoutez une variable `QGIS_PLUGINPATH` avec le chemin du dépôt git (dossier `qgis_mcp`).
-
-Par lien symbolique :
-
-```bash
-ln -s ~/dev/qgis_mcp/qgis_mcp_plugin ~/.local/share/QGIS/QGIS3/profiles/default/python/plugins/qgis_mcp_plugin
-```
-
-Dans tous les cas :
-
-- Redémarrer QGIS
-
-- Dans `Extensions > Installer/Gérer les extensions` puis dans l'onglet `Installés` cochez la case du plugin QGIS MCP pour activer le plugin.
+Dans le gestionnaire d'extensions de QGIS, `Extensions > Installer/Gérer les extensions` puis dans l'onglet `Installer depuis un ZIP`, installer le plugin depuis le fichier ZIP.
 
 - Cliquez sur le bouton QGIS MCP dans la barre d'outil des plugins puis démarrer le serveur.
 
